@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Weird Calculator</string>
+    <string name="editText1">1</string>
+    <string name="editText2">1</string>
+    <string name="textviewL">Pound</string>
+    <string name="textviewR">Pound</string>
+</resources>
