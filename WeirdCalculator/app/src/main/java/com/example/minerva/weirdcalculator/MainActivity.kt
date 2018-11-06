@@ -28,15 +28,15 @@ class MainActivity : AppCompatActivity() {
                     startActivity(i)
                 }
                 "Length" -> {
-                    val i = Intent(this,WeightActivity::class.java)
+                    val i = Intent(this,LengthActivity::class.java)
                     startActivity(i)
                 }
                 "Volume" -> {
-                    val i = Intent(this,WeightActivity::class.java)
+                    val i = Intent(this,VolumeActivity::class.java)
                     startActivity(i)
                 }
                 "Time" -> {
-                    val i = Intent(this,WeightActivity::class.java)
+                    val i = Intent(this,TimeActivity::class.java)
                     startActivity(i)
                 }
             }
