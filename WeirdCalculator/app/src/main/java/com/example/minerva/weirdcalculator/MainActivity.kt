@@ -9,8 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 val conversions = arrayOf(
     "Weight",
     "Length",
-    "Volume",
-    "Time"
+    "Volume"
 )
 class MainActivity : AppCompatActivity() {
 
@@ -33,10 +32,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 "Volume" -> {
                     val i = Intent(this,VolumeActivity::class.java)
-                    startActivity(i)
-                }
-                "Time" -> {
-                    val i = Intent(this,TimeActivity::class.java)
                     startActivity(i)
                 }
             }

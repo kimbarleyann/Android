@@ -47,6 +47,8 @@ class LengthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_length)
         lengthLeft = editText1
+        textViewL.text = LengthNames[0]
+        textViewR.text = LengthNames[0]
 
         // Set up ListView with String Adapter
         val adapter1 = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, LengthNames)
@@ -83,7 +85,7 @@ class LengthActivity : AppCompatActivity() {
         val leftMult = editL.toDouble() * LengthMeter[LengthNames.indexOf(textL)]
         val rightMult = LengthMeter[LengthNames.indexOf(textR)]
         val result = leftMult / rightMult
-        textViewWeightR.text = result.toString()
+        textviewVolR.text = result.toString()
     }
     fun notEmpty(T: String): Boolean {
         return T != ""

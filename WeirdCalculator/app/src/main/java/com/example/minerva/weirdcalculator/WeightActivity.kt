@@ -6,7 +6,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.ArrayAdapter
 import android.widget.EditText
-import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_weight.*
 
 val weightNames = arrayOf(
@@ -56,6 +55,8 @@ class WeightActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_weight)
         weightLeft = editText1
+        textViewL.text = weightNames[0]
+        textViewR.text = weightNames[0]
 
         // Set up ListView with String Adapter
         val adapter1 = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, weightNames)
@@ -92,7 +93,7 @@ class WeightActivity : AppCompatActivity() {
         val leftMult = editL.toDouble() * weightPounds[weightNames.indexOf(textL)]
         val rightMult = weightPounds[weightNames.indexOf(textR)]
         val result = leftMult / rightMult
-        textViewWeightR.text = result.toString()
+        textviewVolR.text = result.toString()
     }
     fun notEmpty(T: String): Boolean {
         return T != ""
